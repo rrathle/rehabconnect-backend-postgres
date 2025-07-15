@@ -1,11 +1,11 @@
-Project: RehabConnect - Patient Progress Tracker
+// Project: RehabConnect - Patient Progress Tracker
+// Backend: Java + Spring Boot
 
-Backend: Java + Spring Boot
+# RehabConnect Backend – Java + Spring Boot + PostgreSQL
 
-# RehabConnect Backend
+A backend service for logging and tracking physical therapy sessions. Built with Java + Spring Boot and designed to be deployed on AWS (Lambda + API Gateway + Cognito) with support for relational or NoSQL databases.
 
-A backend service for logging and tracking physical therapy sessions.
-Built with Java + Spring Boot and designed to be deployed on AWS (Lambda + API Gateway + Cognito) with support for relational or NoSQL databases.
+---
 
 ## Features
 - Patients can log daily rehab activities
@@ -27,11 +27,11 @@ Built with Java + Spring Boot and designed to be deployed on AWS (Lambda + API G
 ---
 
 ## Endpoints
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST   | /log     | Log rehab activity session |
-| GET    | /progress/{patientId} | Retrieve progress logs |
-| PUT    | /plan/{patientId} | Update patient rehab plan |
+| Method | Endpoint                 | Description                         |
+|--------|--------------------------|-------------------------------------|
+| POST   | `/log`                   | Log rehab activity session          |
+| GET    | `/progress/{patientId}` | Retrieve progress logs              |
+| PUT    | `/plan/{patientId}`     | Update patient rehab plan           |
 
 ---
 
@@ -52,12 +52,16 @@ rehabconnect-backend/
 
 ---
 
-## Basic Setup
+## Setup Instructions
 ```bash
 git clone https://github.com/yourusername/rehabconnect-backend.git
 cd rehabconnect-backend
 ./mvnw spring-boot:run
 ```
+
+Ensure PostgreSQL is running and the `rehabconnect` database is created.
+
+---
 
 ## Coming Soon
 - React Frontend (optional)
@@ -92,7 +96,7 @@ cd rehabconnect-backend
 }
 ```
 
-SQL Table Example:
+### SQL Table Example
 ```sql
 CREATE TABLE session_logs (
   id SERIAL PRIMARY KEY,
@@ -103,6 +107,8 @@ CREATE TABLE session_logs (
   reps_completed INTEGER
 );
 ```
+
+---
+
 ## License
 MIT
-
