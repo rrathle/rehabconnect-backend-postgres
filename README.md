@@ -103,4 +103,6 @@ CREATE TABLE session_logs (
   reps_completed INTEGER
 );
 ```
+## License
+MIT
 
