@@ -1,7 +1,7 @@
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/rehabconnect
-    username: rahab_user
+    username: rehab_user
     password: password123
   jpa:
     hibernate:
