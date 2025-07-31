@@ -5,6 +5,7 @@
 
 A backend service for logging and tracking physical therapy sessions. Built with Java + Spring Boot and designed to be deployed on AWS (Lambda + API Gateway + Cognito) with support for relational or NoSQL databases.
 
+
 ---
 
 ## Features
@@ -20,9 +21,15 @@ A backend service for logging and tracking physical therapy sessions. Built with
 - Java 17
 - Spring Boot 3
 - AWS: Lambda, API Gateway, Cognito, S3 (optional)
-- Databases: PostgreSQL (default), MySQL, or DynamoDB
+- Databases: PostgreSQL (default),
 - Build Tool: Maven
-- Deployment: SAM CLI / AWS Console / Docker
+- Deployment: Docker
+
+---
+##  Project Management
+
+- **Version Control:** Git + GitHub (repo used to manage all source code and version history)
+- **Task Management:** Trello was used to plan the app, track feature development, and document progess https://trello.com/b/xohwri5Z/daily-task-management-template-for-project 
 
 ---
 
