@@ -118,7 +118,7 @@ CREATE TABLE session_logs (
 ### Endpoints For RehabPlan
 POST /api/plan 
 Creates a new rehab plan with patient id.
-![Post:api:plan.png](..%2F..%2FPost%3Aapi%3Aplan.png)
+![Post:api:log.png](Photos%20of%20endpoints%2FPost%3Aapi%3Alog.png)
 GET /api/plan/{patientId}
 Fetches a rehab Plan by patient id
 ![Get:api:plan:p123.png](..%2F..%2FGet%3Aapi%3Aplan%3Ap123.png)
