@@ -5,7 +5,6 @@
 
 A backend service for logging and tracking physical therapy sessions. Built with Java + Spring Boot and designed to be deployed on AWS (Lambda + API Gateway + Cognito) with support for relational or NoSQL databases.
 
-
 ---
 
 ## Features
@@ -114,7 +113,27 @@ CREATE TABLE session_logs (
   reps_completed INTEGER
 );
 ```
+---
+## Tested EndPoints August 6, 2025
+### Endpoints For RehabPlan
+POST /api/plan 
+Creates a new rehab plan with patient id.
+![Post:api:plan.png](..%2F..%2FPost%3Aapi%3Aplan.png)
+GET /api/plan/{patientId}
+Fetches a rehab Plan by patient id
+![Get:api:plan:p123.png](..%2F..%2FGet%3Aapi%3Aplan%3Ap123.png)
+PUT /api/plan/{patientId}
+Update an existing rehab plan that exists 
+![Put:api:plan:p123.png](..%2F..%2FPut%3Aapi%3Aplan%3Ap123.png)
 
+### Endpoints For SessionLog
+
+POST /api/log 
+Log a new Session for a patient 
+![Post:api:log.png](..%2F..%2FPost%3Aapi%3Alog.png)
+GET /api/progress/{patientId}
+Get all session logs for a patient from Id
+![Get:api:progress:p123.png](..%2F..%2FGet%3Aapi%3Aprogress%3Ap123.png)
 ---
 
 ## License
