@@ -118,22 +118,23 @@ CREATE TABLE session_logs (
 ### Endpoints For RehabPlan
 POST /api/plan 
 Creates a new rehab plan with patient id.
-![Post:api:log.png](Photos%20of%20endpoints%2FPost%3Aapi%3Alog.png)
+![Post-api-plan.png](screenshots/Post-api-plan.png)
 GET /api/plan/{patientId}
-Fetches a rehab Plan by patient id
-![Get:api:plan:p123.png](..%2F..%2FGet%3Aapi%3Aplan%3Ap123.png)
+Fetches a rehab plan by patient id
+![Get-api-plan.png](screenshots/Get-api-plan.png)
 PUT /api/plan/{patientId}
 Update an existing rehab plan that exists 
-![Put:api:plan:p123.png](..%2F..%2FPut%3Aapi%3Aplan%3Ap123.png)
+![Put-api-plan.png](screenshots/Put-api-plan.png)
+
 
 ### Endpoints For SessionLog
 
 POST /api/log 
 Log a new Session for a patient 
-![Post:api:log.png](..%2F..%2FPost%3Aapi%3Alog.png)
+![Post-api-plan.png](screenshots/Post-api-plan.png)
 GET /api/progress/{patientId}
 Get all session logs for a patient from Id
-![Get:api:progress:p123.png](..%2F..%2FGet%3Aapi%3Aprogress%3Ap123.png)
+![Get-api-progress.png](screenshots/Get-api-progress.png)
 ---
 
 ## License
